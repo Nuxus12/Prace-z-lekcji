@@ -4,11 +4,8 @@ void setup()
 { 
   size (600, 800) ;
   frameRate (14) ;
-
-
   y=210;
   x=210;
-
 }
 
 
