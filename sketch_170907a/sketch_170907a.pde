@@ -1,9 +1,0 @@
-size (640,480) ;
-background (#03FF11) ;
-fill (#0000FF) ;
-rect (230,40,100,100) ;
-ellipse (200,40,50,10) ;
-noFill () ;
-strokeWeight (10) ;
-stroke (#705630) ;
-triangle (50,300,80,67,157,139) ;
