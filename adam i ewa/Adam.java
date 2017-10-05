@@ -7,7 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 public class Adam extends Actor
-{
+{ int brzuszek = 0 ;
     public void klawisze ()
     {
         if (Greenfoot.isKeyDown("d"))move(1) ;
@@ -29,15 +29,23 @@ public class Adam extends Actor
     public void zjadanieJablek ()
     {
 
-        if( isTouching (Apple.class))
+        if( isTouching (Apple.class)&& brzuszek < 5)
+        
         {
             removeTouching (Apple.class);
+            brzuszek ++ ;
         }
     }
+
+    public void oddajJablka ()
+    {
+        if (isTouching( Wychodek.class )) brzuszek =0 ;
+    }   
 
     public void act() 
     {
         klawisze ();
         zjadanieJablek () ;
+        oddajJablka () ;
     }    
 }

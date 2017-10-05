@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Ewa extends Actor
 {
+    int koszyczek =5 ;
     public void klawisze ()
 
     {
@@ -30,8 +31,9 @@ public class Ewa extends Actor
     }    
 
     public void stawianieJablek ()
-    {
-        if (Greenfoot.isKeyDown("space") )
+    { 
+
+        if (Greenfoot.isKeyDown("space")&&(koszyczek>0) )
         {
             if( !isTouching (Apple.class))
             {
@@ -39,14 +41,20 @@ public class Ewa extends Actor
                 int y =getY();
                 Apple apple = new Apple();
                 getWorld() .addObject(apple,x,y);
+
+                koszyczek--;
             }
         }
     }
+    public void zrywanieJablek () 
+    {if (isTouching( Drzewo.class ))koszyczek=5;
+   }
 
     public void act() 
     {
         klawisze ();
         stawianieJablek();
+        zrywanieJablek () ;
 
     }
 }

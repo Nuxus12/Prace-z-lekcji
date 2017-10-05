@@ -32,5 +32,9 @@ public class MyWorld extends World
         addObject(ewa,47,453);
         ewa.setLocation(216,348);
         adam.setLocation(822,113);
+        Drzewo drzewo = new Drzewo();
+        addObject(drzewo,825,371);
+        Wychodek wychodek = new Wychodek();
+        addObject(wychodek,209,98);
     }
 }
