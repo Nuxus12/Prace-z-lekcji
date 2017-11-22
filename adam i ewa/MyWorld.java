@@ -37,4 +37,34 @@ public class MyWorld extends World
         Wychodek wychodek = new Wychodek();
         addObject(wychodek,209,98);
     }
+
+    public void act ()
+    {
+        if(Greenfoot.isKeyDown("b"))
+        {   int szerokosc =getWidth();
+            int wysokosc =getHeight();
+            
+
+            String odp=Greenfoot.ask ("ile węży ustawić: ");
+            int ile = Integer.parseInt(odp);
+
+            for (int i=0; i<ile ; i++)
+            {
+                int x =Greenfoot.getRandomNumber(szerokosc);
+                int y =Greenfoot.getRandomNumber(wysokosc);
+                Snake2 snake=new Snake2();
+                addObject(snake,x,y);
+                
+                while (snake.dotykaAdama()|| snake.dotykaEwy() )
+                {
+                x =Greenfoot.getRandomNumber(szerokosc);
+                y =Greenfoot.getRandomNumber(wysokosc);
+                snake.setLocation(x,y);
+                
+            }
+             
+        }
+    }
 }
+}
+
