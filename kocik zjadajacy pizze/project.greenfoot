@@ -14,12 +14,21 @@ dependency2.type=UsesDependency
 dependency3.from=MyWorld
 dependency3.to=Pizza
 dependency3.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=739
 editor.fx.0.width=816
 editor.fx.0.x=332
 editor.fx.0.y=120
 mainWindow.height=1056
 mainWindow.width=1932
+=======
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+mainWindow.height=744
+mainWindow.width=1378
+>>>>>>> 44181bf59fdf5690968d16e5e112076d7952390c
 mainWindow.x=-8
 mainWindow.y=-8
 package.numDependencies=3
@@ -30,7 +39,10 @@ readme.name=@README
 readme.width=47
 readme.x=10
 readme.y=10
+<<<<<<< HEAD
 simulation.speed=60
+=======
+>>>>>>> 44181bf59fdf5690968d16e5e112076d7952390c
 target1.height=50
 target1.name=Pizza
 target1.showInterface=false
