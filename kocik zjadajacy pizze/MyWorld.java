@@ -28,6 +28,8 @@ public class MyWorld extends World
     {
         Kocik kocik = new Kocik();
         addObject(kocik,492,836);
+        Kocik kocik2 = new Kocik();
+        addObject(kocik2,436,523);
     }
 
     
